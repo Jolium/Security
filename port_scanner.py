@@ -1,4 +1,5 @@
 import socket
+import settings
 
 
 class Scanner:
@@ -30,11 +31,11 @@ class Scanner:
 
 
 def main():
-    ip = '192.168.56.104'
+    ip = settings.IP_ADDRESS
     scanner = Scanner(ip)
-    scanner.scan(1, 65000)
+    scanner.scan(settings.START_PORT, settings.END_PORT)
     print(scanner.open_ports)
-    scanner.write('./open_ports.txt')
+    scanner.write(settings.EXPORT_FILE)
 
 
 if __name__ == '__main__':
