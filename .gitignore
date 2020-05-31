@@ -5,9 +5,13 @@
 !.gitignore
 !port_scanner.py
 !brutus.py
+!nettypes.py
 !capture.py
 !grabber.py
 !scan_and_grab.py
 !create_ssh_connection.py
 !sniffer.py
 !utils.py
+!phone_home_sniffer.py
+!home_server.py
+!server.py

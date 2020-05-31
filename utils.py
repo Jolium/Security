@@ -10,3 +10,7 @@ def time_func(func):
         print(message)
         return results
     return inner
+
+
+def mac_address(bytes_string):
+    return ':'.join('{:02x}'.format(piece).upper() for piece in bytes_string)
